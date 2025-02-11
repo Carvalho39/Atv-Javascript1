@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Idade</title>
+</head>
+
+<body>
+    <script>
+        let ano = prompt("Em qual ano você nasceu?");
+        let idade = 2025 - ano;
+        let age = 2024 - ano;
+        if (idade > 110) {
+            alert('Você não é imortal, digite um ano válido!');
+        }
+        else if (ano < 2025) {
+            alert('Sua idade é: ' + idade + ' anos' + ' ou ' + age + ' anos');
+        }
+        else if (ano == 2025) {
+            alert("Como você digita com alguns meses de vida?")
+        }
+        else {
+            alert("A gente tá em 2025 ué irmão!")
+        }
+
+    </script>
+</body>

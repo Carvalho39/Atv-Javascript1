@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiúsculo e Minúsculo</title>
+</head>
+<style>
+    button {
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    body {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Atividade 10</h1>
+    <p id="demo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare lacus ac neque scelerisque
+        lobortis at velaugue. Fusce a ullamcorper ligula. Cras posuere id turpis quis auctor. Ut volutpat volutpat ex id
+        vestibulum.Quisque fermentum risus quis ornare dapibus. Nulla in est eu est dapibus aliquet vitae vel eros.
+        Mauris sed nunc sit amet mi egestas auctor id non augue. Etiam efficitur ut lectus a volutpat.</p>
+
+    <button onclick="texto()">Tudo Maiúsculo</button>
+    <button onclick="texto2()">Tudo Minúsculo</button>
+
+</body>
+<script>
+    function texto() {
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML =
+            text.toUpperCase();
+    }
+    function texto2() {
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML =
+            text.toLowerCase();
+    }
+
+</script>
+
+</html>
