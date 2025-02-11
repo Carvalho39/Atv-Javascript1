@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<style>
+    button {
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    p {
+        font-size: 40px;
+    }
+
+    body {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Atividade 12</h1>
+
+    <p id="demo">0</p>
+
+    <script>
+        let counter = 0;
+        document.addEventListener('click', () => {
+            counter++;
+            document.getElementById('demo').innerHTML = counter;
+        })
+        //Não sei explicar :) USEI ALURA E CAIO
+    </script>
+
+</body>
+
+</html>
