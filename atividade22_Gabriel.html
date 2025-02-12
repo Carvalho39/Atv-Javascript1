@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        background-color: #043682;
+        color: white;
+    }
+
+    fieldset {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input {
+        padding: 5px;
+        margin: 5px;
+    }
+</style>
+
+<body>
+    <h1>Atividade 23</h1>
+    <form onsubmit="return validarSenha()">
+        <fieldset>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <script>
+        function validarSenha() {
+            var senha = document.getElementById('senha').value;
+            if (senha.length < 6) {
+                alert('A senha deve ter pelo menos 6 caracteres.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
